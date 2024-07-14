@@ -1,0 +1,216 @@
+:root{
+    --themeColor: #4BFFA5;
+    --text_Color:#858585;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  scrollbar-width: 10px;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+.comp {
+  position: absolute;
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#comp1 {
+  background-color: rgb(29, 27, 26);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#comp2 {
+  background-color: transparent;
+  
+}
+
+#comp3 {
+  background-color: transparent;
+  height: 0;
+}
+
+.column {
+  border-right: 1px solid rgba(80, 76, 80, 0.667);
+  background-color: #101010;
+}
+
+.navBar {
+  height: 30px;
+  margin-top: 30px;
+    z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-between; */
+  align-items: center;
+  overflow: hidden;
+  padding: 0 7%;
+
+}
+.logo {
+  /* transform: translateY(30px); */
+  transition: all ease-out .5s;
+  gap: 1.05rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo:hover {
+  /* color: aqua; */
+  transform: translateY(-35px); 
+  cursor: pointer;
+}
+.logo h2 {
+    color: #858585;
+    font-family:  Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+
+}
+.logo h2 span {
+    color: #FFFFFF;
+
+}
+
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navItems {
+  transform: translateY(-6px);
+  overflow: hidden;
+  transition: all ease-out 0.3s;
+  font-family:  Helvetica, sans-serif;
+  color: #858585;
+  font-weight: 800;
+
+}
+.navItems:hover {
+    transform: translateY(-30px);
+    cursor: pointer;
+
+}
+
+/* NAVBAR STYLING ENDS HERE  */
+
+/* HERO PART STYLING STARTS HERE  */
+
+.HeroPhoto{
+    width: 640px;
+    height: 500px;
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    left: 3VW;
+    z-index: 10;
+    /* margin-left: 5rem; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-color: azure; */
+}
+
+
+.paralelogram{
+    background: url(assets/hero1.png);
+    position:absolute;
+    /* clip-path:polygon(31% 0, 100% 25%, 61% 100%, 0 93%); */
+   /* clip-path: polygon(15% 1%, 100% 25%, 61% 100%, 0 77%); */
+   /* clip-path: polygon(39% 8%, 100% 25%, 54% 86%, 0 63%); */
+   /* clip-path: polygon(26% 11%, 100% 25%, 55% 83%, 0 63%); */
+   /* clip-path: polygon(32% 4%, 100% 14%, 59% 79%, 0 63%); */
+   /* clip-path: polygon(32% 4%, 100% 17%, 98% 82%, 19% 67%); */
+   /* clip-path: polygon(32% 4%, 100% 17%, 100% 63%, 20% 72%); */
+   /* clip-path: polygon(32% 4%, 100% 17%, 100% 63%, 20% 72%); */
+   /* clip-path: polygon(32% 4%, 96% 12%, 98% 84%, 19% 100%); */
+   /* clip-path: polygon(26% 11%, 90% 13%, 89% 85%, 19% 100%); */
+   /* clip-path: polygon(26% 11%, 100% 6%, 91% 80%, 12% 86%); */
+   /* clip-path: polygon(26% 11%, 100% 6%, 92% 82%, 8% 100%); */
+   /* clip-path: polygon(29% 10%, 100% 31%, 80% 95%, 0 91%); */
+   /* clip-path: polygon(29% 10%, 100% 31%, 94% 100%, 0 90%); */
+   /* clip-path: polygon(29% 10%, 100% 31%, 94% 100%, 9% 94%); */
+  clip-path:  polygon(31% 0,100% 25%,61% 100%,0 93%);
+
+
+
+   
+
+
+
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(192, 32, 32, 0.181);
+    overflow: hidden;
+}
+
+.HeroPart{
+    display: flex;
+    color: #FFFFFF;
+    align-items: flex-end;
+     
+}
+.description{
+color: #E6E6E6;
+font-size:1.3rem;
+margin-bottom: 4rem;
+
+}
+
+.description span {
+    font-weight: 900;
+    color:var(--themeColor);
+}
+
+/* HERO FOOTER SECTION  */
+.heroFooter{
+    display: flex;
+    align-items: center;
+    padding: 1% 5%;
+    /* justify-content: space-evenly; */
+    gap: 2rem;
+
+}
+.contactInfo p , a{
+color: var(--text_Color);
+font-weight: 500px;
+
+}
+
+.Typewriter{
+    font-size: 90px;
+    color: #FFFFFF;
+    line-height: 74px;
+    font-weight: 500;
+}
+.Typewriter span{
+color: var(--themeColor);
+}
+
+
+/* POINTER STYLING  */
+
+.pointer{
+    width: 35PX;
+    height: 35PX ;
+    background-color: #4BFFA5;
+    position: absolute;
+    border-radius: 50px;
+}
