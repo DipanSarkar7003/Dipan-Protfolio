@@ -1,20 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Home from "../Pages/Home";
 
 function Navbar() {
   return (
     <nav className="navBar">
-
       <div className="logo" id="logo">
-        <h2 className="LogoH2">Dipan <span>Sarkar</span> </h2>
-        <h2>Dipan <span>Sarkar</span> </h2>
+        <h2 className="LogoH2">
+          Dipan <span>Sarkar</span>{" "}
+        </h2>
+        <h2>
+          Dipan <span>Sarkar</span>{" "}
+        </h2>
       </div>
 
       <ul className="navList">
         <li className="navItems">
-          <p>Home </p> <p>Home</p>
+          <Link to="/home">Home </Link> <Link to="/home">Home</Link>
         </li>
         <li className="navItems">
-          <p>Resume </p> <p>Resume</p>
+          <Link to="/resume">Resume </Link> <Link to="/resume">Resume</Link>
         </li>
         <li className="navItems">
           <p>Works </p> <p>Works</p>

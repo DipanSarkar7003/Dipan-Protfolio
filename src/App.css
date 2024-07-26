@@ -24,7 +24,7 @@ body {
 
 .comp {
   position: absolute;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -39,10 +39,14 @@ body {
 
 #comp2 {
   background-color: transparent;
+  /* z-index: 3; */
 }
 
 #comp3 {
-  background-color: transparent;
+  background-color: rgba(211, 164, 164, 0);
+  /* height: 100vh;
+  width: 100vw; */
+  /* z-index: 4; */
   height: 0;
 }
 
@@ -54,13 +58,15 @@ body {
 .navBar {
   height: 30px;
   margin-top: 30px;
-  z-index: 3;
+  z-index: 5;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* justify-content: space-between; */
   align-items: center;
   overflow: hidden;
   padding: 0 7%;
+  position: relative;
+  /* background-color: #e6e6e6; */
 }
 .logo {
   /* transform: translateY(30px); */
@@ -95,6 +101,8 @@ body {
   font-family: Helvetica, sans-serif;
   color: #858585;
   font-weight: 800;
+  display: flex;
+  flex-direction: column;
 }
 .navItems:hover {
   transform: translateY(-30px);
@@ -104,6 +112,11 @@ body {
 /* NAVBAR STYLING ENDS HERE  */
 
 /* HERO PART STYLING STARTS HERE  */
+.HeroPart {
+  display: flex;
+  color: #ffffff;
+  align-items: flex-end;
+}
 
 .HeroPhoto {
   /* width: 640px; */
@@ -114,7 +127,7 @@ body {
   object-fit: cover;
   top: 0;
   left: 3vw;
-  z-index: 10;
+  z-index: 3;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -122,8 +135,7 @@ body {
 }
 
 .paralelogram {
-   
-  background: url(assets/hero1.png) no-repeat center center ;
+  background: url(assets/hero1.png) no-repeat center center;
   position: absolute;
   /* clip-path:polygon(31% 0, 100% 25%, 61% 100%, 0 93%); */
   /* clip-path: polygon(15% 1%, 100% 25%, 61% 100%, 0 77%); */
@@ -141,21 +153,16 @@ body {
   /* clip-path: polygon(29% 10%, 100% 31%, 94% 100%, 0 90%); */
   /* clip-path: polygon(29% 10%, 100% 31%, 94% 100%, 9% 94%); */
   clip-path: polygon(31% 0, 100% 25%, 61% 100%, 0 93%);
-right: 0;
-top: 0;
+  right: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.HeroPart {
-  display: flex;
-  color: #ffffff;
-  align-items: flex-end;
-}
 .description {
   color: #e6e6e6;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 4rem;
 }
 
@@ -185,9 +192,19 @@ a {
   color: #ffffff;
   line-height: 74px;
   font-weight: 500;
+  /* position: absolute;
+  top: "50%";
+  left: "50%";
+  transform: "translate(-50 , -50)";
+  border: "2px solid red"; */
 }
-.Typewriter span {
-  color: var(--themeColor);
+
+.typeWriterPosition {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-wrap: nowrap;
 }
 
 /* POINTER STYLING  */
@@ -209,14 +226,12 @@ a {
   position: absolute;
   bottom: 9rem;
   right: -150px;
-  
+
   gap: 2rem;
   width: 30%;
   box-sizing: content-box;
   color: var(--text_Color);
- 
 }
-
 
 .SocialMediaBox span {
   height: 2px;
@@ -240,4 +255,12 @@ a .socialIcons {
   width: 20px;
   fill: var(--text_Color);
   rotate: -90deg;
+}
+
+/* HOME COMPONENT STYLING HERE  */
+
+
+.homeHeroPart{
+  height: 100%;
+  width: 100%;
 }
