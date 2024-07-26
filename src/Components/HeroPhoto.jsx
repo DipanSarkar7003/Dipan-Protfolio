@@ -4,7 +4,6 @@ function HeroPhoto() {
   return (
     <>
     <div className="HeroPhoto">
-        {/* <img src={image} alt="" /> */}
       <div className="paralelogram">
         HELLO
       </div>
