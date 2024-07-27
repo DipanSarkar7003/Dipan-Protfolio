@@ -1,10 +1,10 @@
 import { Typewriter } from "react-simple-typewriter";
 
-function TypewriterText({typeWriterPosition}) {
-  console.log(typeWriterPosition)
+function TypewriterText({typeWriterPosition , Typewriterstyle}) {
+  console.log(Typewriterstyle)
 
   return (
-    <h1 className={`Typewriter , ${typeWriterPosition}`} >
+    <h1 className={`Typewriter `} style={Typewriterstyle} >
       I{" "}
       <span style={{color:" #4bffa5"}}>
         <Typewriter
