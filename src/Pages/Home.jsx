@@ -1,9 +1,5 @@
-import React from "react";
-import Layout from "../Layout";
-import HeroPart from "../Components/HeroPart";
 import Navbar from "../Components/Navbar";
 import Comp1 from "../Components/Comp1";
-import TypewriterText from "../Components/TypewriterText";
 import HomeHeroPart from "../Components/HomeHeroPart";
 
 function Home() {
@@ -13,12 +9,11 @@ function Home() {
       style={{ position: "relative", backgroundColor: "#262626" }}
     >
       <Comp1 />
-      <div className="HomeComp2 comp" >
+      <div className="HomeComp2 comp">
         <Navbar />
-        <HomeHeroPart/>
+        <HomeHeroPart />
       </div>
       <div className="comp" id="comp3"></div>
-
     </div>
   );
 }

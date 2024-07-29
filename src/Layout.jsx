@@ -1,4 +1,3 @@
-import React from "react";
 import Comp2 from "./Comp2";
 import Comp1 from "./Components/Comp1";
 
