@@ -68,7 +68,7 @@ body {
   position: fixed;
   width: 100vw;
   /* position: relative; */
-  /* background-color: #e6e6e6; */
+  background-color: transparent;
 }
 .logo {
   /* transform: translateY(30px); */
@@ -134,6 +134,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .paralelogram {
@@ -159,6 +160,7 @@ body {
   top: 3rem;
   height: 100%;
   width: 100%;
+  z-index: 100;
   overflow: hidden;
 }
 
@@ -262,17 +264,15 @@ a .socialIcons {
 
 /* HOME COMPONENT STYLING HERE  */
 
-
-.homeHeroPart{
+.homeHeroPart {
   height: 100%;
   width: 100%;
 }
 
-
-.HomeFooter{
+.HomeFooter {
   width: 60%;
   display: flex;
-  padding:2rem 1rem;
+  padding: 2rem 1rem;
   justify-content: space-evenly;
   position: absolute;
   bottom: 0;
@@ -280,11 +280,104 @@ a .socialIcons {
 
 /* RESUME COMPONENT STYLING  */
 
-.MiddleText{
+.MiddleText {
   position: relative;
   width: 100%;
   text-align: center;
   margin-top: 25vh;
+
+  /* transform: translate(-50% -50%); */
   font-size: 7vw;
   color: white;
+  margin-bottom: 23rem;
+}
+
+.bottomNavigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3.5rem;
+}
+
+.links {
+  color: #858585;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.downButton {
+  font-size: 1.2rem;
+  color: white;
+  font-size: 900;
+}
+.ResumeWrapper {
+  width: 60.7%;
+  /* background-color: aqua  ; */
+  margin: auto;
+  margin-top: 5rem;
+  transform: translateX(1%);
+}
+.resumeTop {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  background-color: #101010;
+  /* border: 1px solid var(--text_Color); */
+  z-index: 3;
+}
+.ResumeProfilePicture {
+  grid-row: 1 / span 3;
+  /* padding: 1rem; */
+}
+.resumeDescription {
+  grid-column: 2 / span 4;
+  padding: 0 2rem;
+  line-height: 1.5rem;
+  /* padding-right: 2rem; */
+  color: var(--text_Color);
+  font-weight: 500;
+  /* font-size: 1.2rem; */
+}
+
+.ResumeProfilePicture {
+  max-width: 200px;
+}
+
+.resumeDescBox {
+  padding: 2rem;
+  width: 50%;
+  /* background-color: #e6e6e6; */
+}
+.resumeDescBox p {
+  color: var(--text_Color);
+  text-wrap: nowrap;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.resumeDescBox p span {
+  color: #4bffa5;
+}
+
+.downloadCv {
+  margin: auto;
+  padding: 1rem;
+  border: 2px solid var(--themeColor);
+  background-color: #101010;
+  color: var(--themeColor);
+  font-size: 1.1rem;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+ 
+}
+.circle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: var(--themeColor);
+  z-index: 2;
+  border-radius: 100%;
 }
