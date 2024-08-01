@@ -274,7 +274,6 @@ a .socialIcons {
   display: flex;
   padding:2rem 1rem;
   justify-content: space-evenly;
-  /* background-color: #ba1818; */
   position: absolute;
   bottom: 0;
 }
@@ -283,13 +282,9 @@ a .socialIcons {
 
 .MiddleText{
   position: relative;
-  /* top: 0%; */
-  /* left: 35%; */
   width: 100%;
   text-align: center;
   margin-top: 25vh;
-
-  /* transform: translate(-50% -50%); */
   font-size: 7vw;
   color: white;
 }
