@@ -66,9 +66,26 @@ function ResumeComp2() {
           </div>
         </div>
         <a href={cv} className="downloadCv">
-          Download CV
+          <span className="downloadCvInnerText"> Download CV</span>
           <span className="circle"></span>
         </a>
+        {/* RESUME TOP PART ENDS HERE  */}
+
+        <div className="resumeMain">
+          <h2 className="educationHeading">Education : -</h2>
+          <div className="resumeEducationBox">
+            <div className="resumeEducation1 resumeEducation">
+              <h3>Bachelor of  Computer Application</h3>
+              <p>Indira Gandhi National Open Univesity, Kolkata, West Bengal</p>
+              <p className="current" id="current">2023-present</p>
+            </div>
+            <div className="resumeEducation2 resumeEducation">
+              <h3>Higher Secondary Examination</h3>
+              <p>Barrackpore Latbagan High school</p>
+              <p>2020</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

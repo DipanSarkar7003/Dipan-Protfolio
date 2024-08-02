@@ -1,6 +1,7 @@
 :root {
   --themeColor: #4bffa5;
   --text_Color: #858585;
+  --border_color: rgba(255,255,255,.07);
 }
 
 * {
@@ -51,7 +52,7 @@ body {
 }
 
 .column {
-  border-right: 1px solid rgba(80, 76, 80, 0.667);
+  border-right: 1px solid var(--border_color);
   background-color: #101010;
 }
 
@@ -284,8 +285,7 @@ a .socialIcons {
   position: relative;
   width: 100%;
   text-align: center;
-  margin-top: 25vh;
-
+  margin-top: 30vh;
   /* transform: translate(-50% -50%); */
   font-size: 7vw;
   color: white;
@@ -324,8 +324,9 @@ a .socialIcons {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   background-color: #101010;
-  /* border: 1px solid var(--text_Color); */
+  border: 1px solid var(--border_color);
   z-index: 3;
+  padding: 2rem;
 }
 .ResumeProfilePicture {
   grid-row: 1 / span 3;
@@ -356,6 +357,7 @@ a .socialIcons {
   padding: 5px;
   font-size: 1.1rem;
   font-weight: 500;
+  
 }
 .resumeDescBox p span {
   color: #4bffa5;
@@ -363,21 +365,65 @@ a .socialIcons {
 
 .downloadCv {
   margin: auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: 2px solid var(--themeColor);
-  background-color: #101010;
-  color: var(--themeColor);
-  font-size: 1.1rem;
-  font-weight: 400;
   position: relative;
   display: inline-block;
- 
+  overflow: hidden;
+  margin-top: 2rem;
 }
 .circle {
-  width: 300px;
-  height: 300px;
+  height: 0;
+  width: 0;
   position: absolute;
   background-color: var(--themeColor);
-  z-index: 2;
+  z-index: -1;
   border-radius: 100%;
+  transform: translateY(-50%) translateX(-50%); /* Adjust the transform to center the circle */
+  transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+}
+
+.downloadCvInnerText {
+  z-index: 10;
+  color: var(--themeColor);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.downloadCv:hover .circle {
+  color: black;
+  height: 300px;
+  width: 300px;
+}
+
+.downloadCv:hover .downloadCvInnerText {
+  color: black;
+}
+
+/* RESUME MAIN SECTION STARTS HERE  */
+.educationHeading{
+  color: white;
+  padding: 2rem ;
+}
+.resumeEducationBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.resumeEducation{
+  border: 1px solid var(--border_color);
+  padding: 2rem;
+  background-color: #101010;
+}
+.resumeEducation h3{
+  color: white;
+  padding: 1rem 0;
+
+}
+.resumeEducation p{
+  color: var(--text_Color);
+  padding: .5rem 0;
+}
+#current{
+  color: var(--themeColor);
 }
