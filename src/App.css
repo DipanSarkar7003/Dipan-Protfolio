@@ -371,6 +371,7 @@ a .socialIcons {
   display: inline-block;
   overflow: hidden;
   margin-top: 2rem;
+  margin-left: 2rem;
 }
 .circle {
   height: 0;
@@ -408,6 +409,7 @@ a .socialIcons {
 .resumeEducationBox{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 
 }
 .resumeEducation{
