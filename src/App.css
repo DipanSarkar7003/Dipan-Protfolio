@@ -1,7 +1,7 @@
 :root {
   --themeColor: #4bffa5;
   --text_Color: #858585;
-  --border_color: rgba(255,255,255,.07);
+  --border_color: rgba(255, 255, 255, 0.07);
 }
 
 * {
@@ -308,9 +308,29 @@ a .socialIcons {
   font-size: 1.1rem;
 }
 .downButton {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
   font-size: 900;
+}
+.UpdownButton {
+  animation: upDown 2.5s infinite linear;
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .ResumeWrapper {
   width: 60.7%;
@@ -357,7 +377,6 @@ a .socialIcons {
   padding: 5px;
   font-size: 1.1rem;
   font-weight: 500;
-  
 }
 .resumeDescBox p span {
   color: #4bffa5;
@@ -383,49 +402,114 @@ a .socialIcons {
   transform: translateY(-50%) translateX(-50%); /* Adjust the transform to center the circle */
   transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
 }
-
 .downloadCvInnerText {
   z-index: 10;
   color: var(--themeColor);
   font-size: 1.1rem;
   font-weight: 500;
 }
-
 .downloadCv:hover .circle {
   color: black;
   height: 300px;
   width: 300px;
 }
-
 .downloadCv:hover .downloadCvInnerText {
   color: black;
 }
 
 /* RESUME MAIN SECTION STARTS HERE  */
-.educationHeading{
+.resumePartHeadding {
   color: white;
-  padding: 2rem ;
+  padding: 2rem;
+  text-transform: capitalize;
 }
-.resumeEducationBox{
+.educationHeading {
+  color: white;
+  padding: 2rem;
+  text-transform: capitalize;
+}
+.resumeEducationBox {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-
 }
-.resumeEducation{
+.resumeEducation {
   border: 1px solid var(--border_color);
   padding: 2rem;
   background-color: #101010;
 }
-.resumeEducation h3{
+.resumeEducation h3 {
   color: white;
   padding: 1rem 0;
-
 }
-.resumeEducation p{
+.resumeEducation p {
   color: var(--text_Color);
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
-#current{
+#current {
   color: var(--themeColor);
+}
+
+/* TEFCH SKILL PROGRESS BAR STYLING STARTS HERE  */
+
+.techStackHeadding {
+  color: white;
+  padding: 2rem;
+  text-transform: capitalize;
+}
+.progressComp {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #101010;
+  padding: 2rem;
+  border: 1px solid var(--border_color);
+}
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressbarBefore {
+  color: var(--text_Color);
+  font-weight: 700;
+}
+.progressItemName {
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+/* RESUME INTEREST  STYLING STARTS HERE  */
+
+.intersets {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}
+
+.interestItem {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #101010;
+  border: 1px solid var(--border_color);
+}
+.interestItem i {
+  color: var(--themeColor);
+  font-size: 2rem;
+}
+.interestItem .content h3 {
+  color: whitesmoke;
+  padding: 1rem;
+  font-weight: 500;
+}
+.interestItem .content p {
+  color: var(--text_Color);
+  font-weight: 500;
 }

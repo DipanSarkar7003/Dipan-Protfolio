@@ -4,6 +4,8 @@ import ContactInfo from "./ContactInfo";
 import { Link } from "react-router-dom";
 import profile from "../assets/Profile.jpg";
 import cv from "../assets/cv.pdf";
+import ProgressComp from "./ProgressComp";
+import Interests from "./Interests";
 function ResumeComp2() {
   const socialMediaBoxStyle = {
     position: "fixed",
@@ -31,7 +33,7 @@ function ResumeComp2() {
         <div className="links">
           <Link>Home</Link> / <Link>Resume</Link>
         </div>
-        <i className="fa-solid fa-chevron-down downButton"></i>
+        <i className="fa-solid fa-chevron-down downButton UpdownButton"></i>
       </div>
 
       <div className="ResumeWrapper">
@@ -93,7 +95,11 @@ function ResumeComp2() {
             <div className="resumeEducation1 resumeEducation">
               <h3>The Ultimate React Course </h3>
               <p>By Jonas Schmedtman </p>
-              <p><a href="https://www.udemy.com/course/the-ultimate-react-course/?couponCode=LEARNNOWPLANS">Udemy</a></p>
+              <p>
+                <a href="https://www.udemy.com/course/the-ultimate-react-course/?couponCode=LEARNNOWPLANS">
+                  Udemy
+                </a>
+              </p>
             </div>
             <div className="resumeEducation2 resumeEducation">
               <h3>The Complete JavaScript Course</h3>
@@ -105,6 +111,8 @@ function ResumeComp2() {
               </p>
             </div>
           </div>
+          <ProgressComp />
+          <Interests />
         </div>
       </div>
     </div>
