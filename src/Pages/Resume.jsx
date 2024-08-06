@@ -6,14 +6,7 @@ import ContactInfo from "../Components/ContactInfo";
 import ResumeComp2 from "../Components/ResumeComp2";
 
 function Resume() {
-  const socialMediaBoxStyle = {
-    position: "fixed",
-  };
-const contactInfoStyle={
-  position: "fixed",
-  bottom: "4rem",
-  left: "4rem",
-}
+
   return (
     <div
       className="resume"

@@ -13,6 +13,7 @@ function ResumeComp2() {
     bottom: "4rem",
     left: "4rem",
   };
+
   return (
     <div
       className="resumeComp2 comp"
@@ -44,13 +45,13 @@ function ResumeComp2() {
           </p>
           <div className="resumeDescBox1 resumeDescBox">
             <p>
-              <span>Age</span> : 21
+              <span>Age</span> : {new Date().getFullYear() - 2003}
             </p>
             <p>
               <span>Freelance</span> : Available
             </p>
             <p>
-              <span>Phone</span> : 7003224488
+              <span>Phone</span> : +91-7003224488
             </p>
           </div>
           <div className="resumeDescBox2 resumeDescBox">
@@ -66,9 +67,45 @@ function ResumeComp2() {
           </div>
         </div>
         <a href={cv} className="downloadCv">
-          Download CV
+          <span className="downloadCvInnerText"> Download CV</span>
           <span className="circle"></span>
         </a>
+        {/* RESUME TOP PART ENDS HERE  */}
+
+        <div className="resumeMain">
+          <h2 className="educationHeading">Education : -</h2>
+          <div className="resumeEducationBox">
+            <div className="resumeEducation1 resumeEducation">
+              <h3>Bachelor of Computer Application</h3>
+              <p>Indira Gandhi National Open Univesity, Kolkata, West Bengal</p>
+              <p className="current" id="current">
+                2023-present
+              </p>
+            </div>
+            <div className="resumeEducation2 resumeEducation">
+              <h3>Higher Secondary Examination</h3>
+              <p>Barrackpore Latbagan High school</p>
+              <p>2020</p>
+            </div>
+          </div>
+          <h2 className="educationHeading">Courses : -</h2>
+          <div className="resumeEducationBox">
+            <div className="resumeEducation1 resumeEducation">
+              <h3>The Ultimate React Course </h3>
+              <p>By Jonas Schmedtman </p>
+              <p><a href="https://www.udemy.com/course/the-ultimate-react-course/?couponCode=LEARNNOWPLANS">Udemy</a></p>
+            </div>
+            <div className="resumeEducation2 resumeEducation">
+              <h3>The Complete JavaScript Course</h3>
+              <p>By Jonas Schmedtman </p>
+              <p>
+                <a href="https://www.udemy.com/course/the-complete-javascript-course/?couponCode=LEARNNOWPLANS">
+                  udemy
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
