@@ -11,31 +11,45 @@ function ProgressItem({ item, color }) {
   console.log(item);
 
   return (
-<div className="progressWholeItem" style={{display:"flex" , flexDirection:"column" , alignItems:"center" , gap:"1.3rem"}}>
-
-
-    <div style={{position:"relative"}}    >
-      <div className="progress-bar" style={progressItemStyle}>
-        <progress
-          value="90"
-          min="0"
-          max="100"
+    <div
+      className="progressWholeItem"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "1.3rem",
+      }}
+    >
+      <div style={{ position: "relative" }}>
+        <div className="progress-bar" style={progressItemStyle}>
+          <progress
+            value="90"
+            min="0"
+            max="100"
+            style={{
+              visibility: "hidden",
+              height: "0",
+              width: "0",
+              color: "red",
+              zIndex: "2",
+            }}
+          ></progress>
+        </div>
+        <div
+          className="progressbarBefore"
           style={{
-            visibility: "hidden",
-            height: "0",
-            width: "0",
-            color: "red",
-            zIndex: "2",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50% , -50%)",
           }}
         >
-        </progress>
+          {item.percentage}%
+        </div>
       </div>
-      <div className="progressbarBefore" style={{position:"absolute" , top:"50%" , left:"50%" , transform:"translate(-50% , -50%)"}}>{item.percentage}%</div>
-    </div>
 
-    <p className="progressItemName">{item.name}</p>
+      <p className="progressItemName">{item.name}</p>
     </div>
-
   );
 }
 

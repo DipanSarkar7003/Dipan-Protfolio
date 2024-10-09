@@ -5,7 +5,7 @@ function HeroPhoto() {
     <>
     <div className="HeroPhoto">
       <div className="paralelogram">
-        HELLO
+      
       </div>
     </div>
 

@@ -1,5 +1,6 @@
 import Comp2 from "./Comp2";
 import Comp1 from "./Components/Comp1";
+import Comp3 from "./Components/Comp3";
 
 const Layout = () => {
   return (
@@ -9,7 +10,7 @@ const Layout = () => {
     >
       <Comp1 />
       <Comp2 />
-      <div className="comp" id="comp3"></div>
+      <Comp3 />
     </div>
   );
 };

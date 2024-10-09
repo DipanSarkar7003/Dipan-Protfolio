@@ -24,8 +24,8 @@ const interestList = [
     } ,
     {
         id: 4,  
-        icon:"fa-solid fa-gamepad",
-        title: "Video games",
+        icon:"fa-solid fa-guitar",
+        title: "playing Guitar",
         description:"I am a big fan of video games though i dont have a gaming console but i play games on my computer"
     }
 ]
