@@ -20,6 +20,8 @@ body {
   height: 100vh;
   scrollbar-width: 10px;
   overflow: hidden;
+  max-width: 128rem;
+  margin: 0 auto;
   /* border: 2px solid red; */
 }
 
@@ -36,11 +38,13 @@ body {
   background-color: rgb(29, 27, 26);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  max-width: 100%;
 }
 
 #comp2 {
   background-color: transparent;
   /* z-index: 3; */
+  max-width: 100%;
 }
 
 #comp3 {
@@ -52,6 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 
 .column {
@@ -522,9 +527,28 @@ a .socialIcons {
   transform: translateX(1%);
   color: whitesmoke;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  /* padding: 5rem; */
+  /* border: 2px solid green; */
 }
 .workItem {
+/* border: 2px solid red; */
   padding: 2rem;
-  border: 1px solid var(--border_color);
+  margin: auto;
+}
+.workContent {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.workImage img {
+  max-width: 30rem;
+  /* border: 2px solid yellow; */
+}
+
+.workTools {
+  font-size: 11px;
+  margin: 5px 0;
+  color: var(--text_Color);
 }
